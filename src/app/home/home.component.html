@@ -1,0 +1,34 @@
+<nav class="navbar navbar-light bg-faded">
+  <a class="navbar-brand" href="#">
+    <!-- <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+    DASHBOARD
+  </a>
+</nav>
+<div class="main">
+  <p style="font-size:40px">Registered Users</p>
+  <table class="table">
+    <thead>
+      <tr>
+       
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of Datas">
+        
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.phone}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <a [routerLink]="['/start']">Go to Main Page</a>
+</div>
+
+
+<!-- {{message}}
+    <button (click)="newMessage()">New Message</button> -->
